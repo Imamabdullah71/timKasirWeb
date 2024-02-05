@@ -1,0 +1,136 @@
+/* Reset CSS */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Hero Section Styling */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #000000;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Features Section Styling */
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.feature {
+    flex: 1;
+    text-align: center;
+}
+
+.feature img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.feature h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .features {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature {
+        margin-bottom: 20px;
+    }
+}
